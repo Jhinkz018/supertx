@@ -1,10 +1,6 @@
-# EVM Auto Transaction Script
+# 🚀 EVM Auto Transaction Script Guide
 
-Automate transactions across all major EVM-compatible networks with beautiful logging and multi-network support. This script is perfect for airdrop hunters, network testers, and blockchain developers who want to:
-
-- Send small transactions to random addresses on every EVM chain
-- Track transaction status with beautiful, color-coded logs
-- Easily add or remove supported networks
+Automate transactions across all major EVM-compatible networks with beautiful logging and multi-network support. Perfect for airdrop hunters, network testers, and blockchain developers!
 
 ---
 
@@ -67,3 +63,5 @@ python scripts/evm_transaction.py
 
 - Built with ❤️ by [Jhinkz018](https://github.com/Jhinkz018)
 - Join our community: https://discord.gg/y5YUHrEC
+
+---
