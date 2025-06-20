@@ -18,7 +18,11 @@ Automate transactions across all major EVM-compatible networks with beautiful lo
 - `web3`, `python-dotenv`, `eth-account`, `requests`
 
 ## Setup
-1. Clone this repo
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/Jhinkz018/supertx.git
+   cd supertx
+   ```
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
@@ -26,9 +30,9 @@ Automate transactions across all major EVM-compatible networks with beautiful lo
 3. Create a `.env` file in the root directory:
    ```env
    PRIVATE_KEY=your_private_key_here
-   INFURA_PROJECT_ID=your_infura_project_id_here
    ```
-4. Edit `evm_transaction.py` to add/remove networks as needed
+   Replace `your_private_key_here` with your wallet's private key (keep this safe!).
+4. (Optional) Edit `scripts/evm_transaction.py` to add/remove networks as needed.
 
 ## Usage
 Run the script:
@@ -42,5 +46,5 @@ python scripts/evm_transaction.py
 - Use at your own risk
 
 ## Credits
-- Inspired by Helios.js logging style
-- Built with ❤️ by [Your GitHub Username]
+- Built with ❤️ by [Jhinkz018](https://github.com/Jhinkz018)
+- Join our community: https://discord.gg/y5YUHrEC
