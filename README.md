@@ -1,84 +1,72 @@
-# 🚀 supertx
+# SuperTX Bulk Sender
 
-[![License](https://img.shields.io/github/license/Jhinkz018/supertx)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/Jhinkz018/supertx)](https://github.com/Jhinkz018/supertx/issues)
-[![Stars](https://img.shields.io/github/stars/Jhinkz018/supertx)](https://github.com/Jhinkz018/supertx/stargazers)
+A Node.js script for sending native coins or ERC20 tokens to multiple addresses on any EVM-compatible chain. Supports batching, custom gas, and fallback RPCs.
 
-> **supertx** is a powerful, flexible, and easy-to-use transaction processing library for modern applications.
+## Features
 
----
+- Bulk send native coins or ERC20 tokens
+- Supports any EVM chain (configured in `chains.json`)
+- Batching and nonce management for efficient sending
+- Custom gas settings
+- Fallback provider for reliable RPC usage
+- Interactive CLI prompts
 
-## 🖥️ Getting Started
+## Prerequisites
 
-- **GitHub Repo:** [https://github.com/Jhinkz018/supertx](https://github.com/Jhinkz018/supertx)
+- Node.js v18+ recommended
+- NPM
 
-- **Clone the repository:**
-  ```bash
-  git clone https://github.com/Jhinkz018/supertx.git
-  cd supertx
-  ```
+## Setup
 
----
+1. **Clone or Download** this repository.
+2. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+3. **Configure Chains**:
+   - Edit `chains.json` to add or update supported EVM networks and their RPC endpoints.
 
-## ✨ Features
+4. **Prepare Address List**:
+   - Create a file named `address.txt` in the same directory.
+   - Add one recipient address per line (EVM addresses only).
 
-- ⚡ Fast and efficient transaction handling
-- 🔒 Secure and reliable
-- 🛠️ Easy integration with your existing stack
-- 📦 Lightweight and modular
-- 📝 Well-documented and tested
+## Usage
 
----
+Run the script from the project directory:
 
-## 📦 Installation
-
-```bash
-npm install supertx
-# or
-yarn add supertx
+```sh
+node bot.js
 ```
 
----
+You will be prompted to:
 
-## 🚀 Quick Start
+- Select a network
+- Choose transfer type (Native Coin or ERC20 Token)
+- Enter your private key
+- (If ERC20) Enter the token contract address
+- Enter the amount to send to each address
+- Optionally set custom gas parameters
 
-```javascript
-import { SuperTx } from 'supertx';
+The script will process all addresses in `address.txt` and display transaction results.
 
-const tx = new SuperTx();
-tx.process({ /* transaction data */ });
-```
+## Files
 
----
+- `bot.js` - Main script
+- `chains.json` - List of supported EVM networks and RPCs
+- `address.txt` - List of recipient addresses (one per line)
 
-## 📚 Documentation
+## Notes
 
-- [API Reference](docs/API.md)
-- [Usage Examples](docs/EXAMPLES.md)
-- [FAQ](docs/FAQ.md)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
-## 🛡️ License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 💬 Contact
-
-For questions or support, open an [issue](https://github.com/Jhinkz018/supertx/issues) or reach out to [@Jhinkz018](https://github.com/Jhinkz018).
-
-Join our [Discord Community](https://discord.gg/vRHTv6TT) for live discussion and support.
+- **Never share your private key.** Use a dedicated wallet for bulk sending.
+- Make sure you have enough balance for all transactions and gas fees.
+- The script will stop if there are critical errors (e.g., insufficient balance, invalid RPCs).
 
 ---
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Jhinkz018/supertx/main/assets/logo.png" alt="supertx logo" width="120"/>
 </p>
+
+---
+
+Join our [Discord Community](https://discord.gg/vRHTv6TT) for live discussion and support.

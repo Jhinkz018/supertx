@@ -1,0 +1,22 @@
+{
+  "name": "supertx-bulk-sender",
+  "version": "1.0.0",
+  "description": "Bulk sender for native coins and ERC20 tokens on EVM chains.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "ethers": "^6.0.0",
+    "inquirer": "^9.0.0"
+  },
+  "keywords": [
+    "evm",
+    "bulk",
+    "sender",
+    "erc20",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
